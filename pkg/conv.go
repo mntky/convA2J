@@ -31,7 +31,7 @@ func Convert(text string) (string) {
 	for i:=0; i<c; i++ {
 		jd += key[i]+data[i]
 	}
-	jd = "}"
+	jd += "}"
 
 	return jd
 }
