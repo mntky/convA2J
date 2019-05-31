@@ -2,7 +2,7 @@ package conv
 
 import (
 	//"fmt"
-	"strings"
+	//"strings"
 )
 
 func Convert(text string) (string) {
@@ -29,11 +29,13 @@ func Convert(text string) (string) {
 		word += string(d)
 	}
 
-	for i:=0; i<c; i++ {
+	word += "\""
+	data = append(data, word)
+
+	for i:=0; i<=c; i++ {
 		jd += key[i]+data[i]
 	}
 	jd += "}"
-	jd = strings.Replace(jd, ",}", "}", 1)
 
 	return jd
 }
