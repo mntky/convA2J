@@ -2,6 +2,7 @@ package conv
 
 import (
 	//"fmt"
+	"strings"
 )
 
 func Convert(text string) (string) {
@@ -32,6 +33,7 @@ func Convert(text string) (string) {
 		jd += key[i]+data[i]
 	}
 	jd += "}"
+	jd = strings.Replace(jd, ",}", "}", 1)
 
 	return jd
 }
