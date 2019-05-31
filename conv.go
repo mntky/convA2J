@@ -10,20 +10,20 @@ func main() {
 
 	var key []string
 	var data []string
-	var word string
+	word := "\""
 	c := 0
 
 	//n is num , d = word(mozi code)
 	for _, d := range testdata {
 		if d == 61 {
-			word += ":" //:
+			word += "\":" //:
 			key = append(key, word)
-			word = ""
+			word = "\""
 			continue
 		}else if d == 38 {
-			word += ","
+			word += "\","
 			data = append(data, word)
-			word = ""
+			word = "\""
 			c += 1
 			continue
 		}

@@ -7,9 +7,9 @@ import (
 func Convert(text string) (string) {
 	var key []string
 	var data []string
-	var jd string
 	c := 0
 	word := "\""
+	jd := "{ "
 
 	//n is num , d = word(mozi code)
 	for _, d := range text {
@@ -31,6 +31,7 @@ func Convert(text string) (string) {
 	for i:=0; i<c; i++ {
 		jd += key[i]+data[i]
 	}
+	jd = "}"
 
 	return jd
 }
