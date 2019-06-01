@@ -1,8 +1,6 @@
 package conv
 
 import (
-	//"fmt"
-	//"strings"
 )
 
 func Convert(text string) (string) {

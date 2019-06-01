@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	testdata := "token=vFlRfdwGp9Nk5koVtSrbM1Qw&team_id=T63EC9465&team_domain=ecc-network-club&service_id=652176051510&channel_id=CJSJ7T8PM&channel_name=test&timestamp=1559196598.002400&user_id=U643K5KD0&user_name=minatoo&text=ojisan&trigger_word=ojisan"
+	testdata := "token=vFlRfdwGp9Nk5koVtSaaaa&team_id=teamaaaa&team_domain=xxxwork-club&service_id=65176051510&channel_id=JSJ7T8PM&channel_name=test&timestamp=1559196502400&user_id=43K5KD0&user_name=mntky&text=ojisan&trigger_word=ojisan"
 
 	var key []string
 	var data []string

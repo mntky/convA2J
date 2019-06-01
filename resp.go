@@ -10,8 +10,6 @@ import (
 )
 
 
-var url = "https://hooks.slack.com/services/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"
-
 type ConvData struct {
 	Token           string
     Team_id         string
@@ -45,9 +43,9 @@ func decode(data string) {
     }
 
     fmt.Println(convdata.User_name)
-
-	exec.Command("curl",url,"-X","POST","-H","\"Content-Type: application/json\"","-d","'{\"username\":\"eliot\", \"text\":\"'$(ojichat convdata.User_name)'\"}')").Output()
+	out, err := exec.Command("sh", "./send.sh", convdata.User_name).Output()
 	if err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println(string(out))
 }
